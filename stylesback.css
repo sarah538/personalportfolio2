@@ -1,0 +1,109 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+/* Nav bar styles */
+.nav {
+  display: flex;
+  justify-content: flex-end;
+  width: 100%;
+  background: rgb(176, 193, 148);
+}
+.nav-list {
+  display: flex;
+}
+.nav-list li {
+  list-style-type: none;
+  /* border: 2px solid black; */
+  width: 150px;
+  text-decoration: none;
+  font-size: 2rem;
+}
+.nav-list li a {
+  color: rgb(98, 122, 48);
+  text-decoration: none;
+}
+.nav-list li a:hover {
+  color: yellow;
+  text-decoration: none;
+}
+
+@media only screen and (min-device-width: 320px) and (max-device-width: 480px) {
+  .nav {
+    justify-content: center;
+  }
+  .nav-list li {
+    width: 50px;
+    text-decoration: none;
+    font-size: 0.8rem;
+  }
+}
+
+/* Welcome section */
+
+.welcome-section {
+  /* display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center; */
+  text-align: center;
+  width: 100%;
+  height: 700px;
+  background-color: rgb(244, 247, 246);
+  /* background-image: linear-gradient(62deg, #3a3d40 0%, #181719 100%); */
+}
+
+.welcome-section h1 {
+  color: rgb(98, 122, 48);
+}
+.welcome-section > p {
+  font-size: 3rem;
+  font-weight: 200;
+  color: rgb(98, 122, 48);
+}
+.welcome-section > img {
+  height: 400px;
+  width: 400px;
+  border: 10px solid white;
+  border-radius: 50%;
+}
+@media only screen and (min-device-width: 320px) and (max-device-width: 480px) {
+  .welcome-section {
+    height: 300px;
+  }
+  .welcome-section > p {
+    font-size: 1rem;
+  }
+  .welcome-section > img {
+    height: 150px;
+    width: 150px;
+  }
+}
+
+/* Contacts Section */
+.contact-section {
+  background-color: rgb(233, 128, 68);
+  text-align: center;
+  padding: 10rem 2rem;
+}
+.contact-section-header {
+  color: white;
+  font-size: 2rem;
+}
+
+.contact-links a {
+  color: white;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-size: 1.5rem;
+  margin: 15px;
+}
+/* footer  */
+footer {
+  text-align: center;
+  font-size: 1.2rem;
+  padding: 2rem;
+  background: rgb(220, 184, 146);
+  border-top: 4px solid red;
+}
